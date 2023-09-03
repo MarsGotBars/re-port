@@ -1,6 +1,6 @@
 import {React, useRef, useState} from "react";
 import "./contact.css";
-import { BsMailbox, BsDiscord, BsWhatsapp } from "react-icons/bs";
+import { BsMailbox, BsWhatsapp } from "react-icons/bs";
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
@@ -38,18 +38,6 @@ export default function Contact() {
             <h4>Email</h4>
             <h5>marcinm@live.nl</h5>
             <a href="mailto:marcinm@live.nl" target="_blank" rel="noreferrer">
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsDiscord className="contact__option-icon"/>
-            <h4>Discord</h4>
-            <h5>MarsGotBars#2858</h5>
-            <a
-              href="https://discordapp.com/users/958084070305304676"
-              target="_blank"
-              rel="noreferrer"
-            >
               Send a message
             </a>
           </article>
