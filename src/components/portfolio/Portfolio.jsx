@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import IMGdata from "./Image";
 import wip from "../../assets/wip.png";
-
+import crow from "../../assets/CROW.png";
 export default function Portfolio() {
   return (
     <section id="portfolio">
@@ -10,7 +10,7 @@ export default function Portfolio() {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article key="1" className="portfolio__item">
+        <article key="0" className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={wip} alt="W.I.P." />
           </div>
@@ -51,6 +51,22 @@ export default function Portfolio() {
             );
           })
         }
+        <article key="4" className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={crow} alt="CRUD app (PHP)" />
+          </div>
+          <h3>CRUD app (PHP)</h3>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/MarsGotBars/CRUD" className="btn">
+              Github
+                </a>
+            <button
+              className="btn-inActive"
+            >
+              Live Demo
+                </button>
+          </div>
+        </article>
       </div>
     </section>
   );
