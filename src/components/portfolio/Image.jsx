@@ -23,7 +23,7 @@ const IMGdata = [
     image: pex,
     title: "Villas4U",
     github: "https://github.com/MarsGotBars/Villas4U",
-    demo: "villas4u.netlify.app",
+    demo: "https://villas4u.netlify.app",
   }
 ];
 export default IMGdata;

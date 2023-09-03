@@ -16,22 +16,15 @@ export default function Experience() {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
-                <h4>HTML</h4>
+                <h4>HTML5</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
-                <h4>CSS</h4>
+                <h4>Tailwind</h4>
                 <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Bootstrap</h4>
-                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
@@ -44,8 +37,22 @@ export default function Experience() {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>Bootstrap</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>Typescript</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>SCSS</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
@@ -58,7 +65,7 @@ export default function Experience() {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
                 <h4>Python</h4>
-                <small className="text-light">High-Intermediate</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
