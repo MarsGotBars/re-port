@@ -46,6 +46,12 @@
     text-decoration: line-through;
 }
 
+.btn-inActive:hover{
+    color: var(--color-primary);
+}
+.separator{
+    margin-top: 8rem;
+}
 /* media queries (medium) */
 @media screen and (max-width: 1024px) {
     .portfolio__container{

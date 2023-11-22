@@ -14,7 +14,7 @@ export default function Header() {
         <HeaderSocials/>
 
         <figure className="me">
-          <img src={ME} alt="" />
+          <img src={ME} alt="Marcin Magdziak" />
         </figure>
 
         <a href="#contact" className="scroll__down">Scroll down</a>

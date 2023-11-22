@@ -1,9 +1,19 @@
 
 import pex from "../../assets/pex.jpg";
 import portf from "../../assets/portf.png";
-import poke from "../../assets/pokedex.jpg";
 import weath from "../../assets/weather.png";
-const IMGdata = [
+import ARA from "../../assets/ARA.png";
+import wip from "../../assets/wip.jpg";
+import crow from "../../assets/CROW.png";
+import royal from "../../assets/rbb.jpg";
+const PortData = [
+  {
+    id: 0,
+    image: wip,
+    title: "W.I.P.",
+    github: "",
+    demo: "",
+  },
   {
     id: 1,
     image: weath,
@@ -24,6 +34,32 @@ const IMGdata = [
     title: "Villas4U",
     github: "https://github.com/MarsGotBars/Villas4U",
     demo: "https://villas4u.netlify.app",
-  }
+  },
+  {
+    id: 4,
+    image: crow,
+    title: "CRUD app (PHP)",
+    github: "https://github.com/MarsGotBars/CRUD",
+    demo: "",
+  },
 ];
-export default IMGdata;
+const GenData = [
+  {
+    id: 5,
+    image: ARA,
+    title: "ARA Creative Agency website",
+    github: "",
+    demo: "https://ara.nl/",
+  },
+  {
+    id: 6,
+    image: royal,
+    title: "Royal Buisman",
+    github: "",
+    demo: "https://www.royalbuisman.com/",
+  }
+]
+export{
+  PortData,
+  GenData
+}
