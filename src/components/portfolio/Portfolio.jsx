@@ -1,33 +1,16 @@
 import React from "react";
 import "./portfolio.css";
-import IMGdata from "./Image";
-import wip from "../../assets/wip.png";
-import crow from "../../assets/CROW.png";
+import { PortData } from "./Image";
+import { GenData } from "./Image";
 export default function Portfolio() {
   return (
     <section id="portfolio">
-      <h5>My Work</h5>
-      <h2>Portfolio</h2>
+      <h5>Portfolio</h5>
+      <h2>My personal work</h2>
 
       <div className="container portfolio__container">
-        <article key="0" className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={wip} alt="W.I.P." />
-          </div>
-          <h3>W.I.P.</h3>
-          <div className="portfolio__item-cta">
-            <button className="btn-inActive">
-              Github
-                </button>
-            <button
-              className="btn-inActive"
-            >
-              Live Demo
-                </button>
-          </div>
-        </article>
         {
-          IMGdata.map(({ id, image, title, github, demo }) => {
+          PortData.map(({ id, image, title, github, demo }) => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
@@ -35,38 +18,59 @@ export default function Portfolio() {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className="btn">
+                  {github ? <a href={github} className="btn">
                     Github
-                </a>
+                  </a> : <a className="btn-inActive">
+                    Github
+                  </a>}
+                  {demo ? <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live link
+                  </a> : <a
+                    className="btn-inActive"
+                  >
+                    Live link
+                  </a>}
+                </div>
+              </article>
+            );
+          })
+        }
+      </div>
+
+      <h2 className="separator">Other projects I've  worked on</h2>
+      <div className="container portfolio__container">
+        {
+          GenData.map(({ id, image, title, github, demo }) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  {github ? <a href={github} className="btn">
+                    Github
+                  </a> : <a className="btn-inActive">
+                    Github
+                  </a>}
                   <a
                     href={demo}
                     className="btn btn-primary"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live Demo
-                </a>
+                    Live link
+                  </a>
                 </div>
               </article>
             );
           })
         }
-        <article key="4" className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={crow} alt="CRUD app (PHP)" />
-          </div>
-          <h3>CRUD app (PHP)</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/MarsGotBars/CRUD" className="btn">
-              Github
-                </a>
-            <button
-              className="btn-inActive"
-            >
-              Live Demo
-                </button>
-          </div>
-        </article>
       </div>
     </section>
   );
